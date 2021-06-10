@@ -7,10 +7,10 @@ function ProjectCard(props) {
         <Col key={props.id} col={12} md={6} xl={4}>
             <div className="card">
                 <div className="card-header">
-                    <h2>{props.project_name}</h2>
+                    <h2 style={{padding: '10px'}}>{props.project_name}</h2>
                 </div>
                 <div className="card-body has-text-center">
-                    <img className="projImage" src={`${props.imageSrc}`} alt={props.imageAlt} />
+                    <img className="projImage" src={props.imageSrc} alt={props.imageAlt} />
                     <p>{props.desc}</p>
                     <br />
                     <div>
